@@ -1,0 +1,264 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light grey background for the body */
+    color: #333; /* Dark grey text color */
+}
+
+header {
+    background: #007BFF; /* Blue background for the header */
+    color: #fff; /* White text color */
+    padding: 1rem 0;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* White text color for nav links */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better accessibility */
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    scroll-margin-top: 75px; /* Adjust this value to match the height of the header */
+}
+
+section#about p {
+    margin-bottom: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section#contact {
+    margin: 0 auto;
+    width: 55%;
+    min-width: 300px;
+    padding-bottom: 4rem;
+}
+
+section#contact h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Light grey border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007BFF; /* Blue border on focus for inputs */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    background: #007BFF; /* Blue background for button */
+    color: #fff; /* White text color for button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    min-width: 100px;
+    width: 25%;
+    margin-top: 2rem;
+}
+
+form button:hover {
+    background: #0056b3; /* Darker blue on hover for button */
+}
+
+p#error-message {
+    display: none; 
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333; /* Dark grey background for footer */
+    color: #fff; /* White text color for footer */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Lightbox modal styles */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .lightbox-modal {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1001;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .lightbox-modal {
+        width: 90vw;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        background: #007BFF;
+        position: fixed;
+        top: 75px; /* Adjust this value to match the height and padding of the header */
+        left: -250px;
+        transition: left 0.3s ease-in-out;
+        z-index: 1002;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+        border-top: 1px solid #fff; /* White border between list items */
+    }
+
+    nav ul li:hover {
+        background: #0056b3; /* Darker blue background on hover */
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem; /* Ensure consistent padding */
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+    }
+
+    form button {
+        margin: auto;
+    }
+
+}

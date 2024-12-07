@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Welcome to my portfolio! I am a web developer with experience in building responsive and accessible websites.</p>
+            <p>I minored in computer science, learned through self-study, and attended LaunchCode to solidify my skills.</p>
+            <p>I am currently pursuing an AAS in Secure Systems and Cybersecurity.</p>
+            <p>Feel free to browse my projects.</p>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="projects-grid">
+                <div class="project">
+                    <picture>
+                        <source srcset="https://placehold.co/150" media="(max-width: 768px)">
+                        <img src="https://placehold.co/275" alt="Project 1" class="project-image" data-modal-id="lightbox-modal-p1">
+                    </picture>
+                    <div id="lightbox-modal-p1" class="lightbox-modal">
+                        <span class="close">&times;</span>
+                        <img class="lightbox-content" src="" alt="Project 1">
+                    </div>
+                    <h2>Project 1</h2>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="project">
+                    <picture>
+                        <source srcset="https://via.placeholder.com/150" media="(max-width: 768px)">
+                        <img src="https://via.placeholder.com/275" alt="Project 2" class="project-image" data-modal-id="lightbox-modal-p2">
+                    </picture>
+                    <div id="lightbox-modal-p2" class="lightbox-modal">
+                        <span class="close">&times;</span>
+                        <img class="lightbox-content" src="" alt="Project 2">
+                    </div>
+                    <h2>Project 2</h2>
+                    <p>Description of project 2.</p>
+                </div>
+                <div class="project">
+                    <picture>
+                        <source srcset="https://placehold.co/150" media="(max-width: 768px)">
+                        <img src="https://placehold.co/275" alt="Project 3" class="project-image" data-modal-id="lightbox-modal-p3">
+                    </picture>
+                    <div id="lightbox-modal-p3" class="lightbox-modal">
+                        <span class="close">&times;</span>
+                        <img class="lightbox-content" src="" alt="Project 3">
+                    </div>
+                    <h2>Project 3</h2>
+                    <p>Description of project 3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h1>Skills</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>TypeScript</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Bash</li>
+                <li>Python</li>
+                <li>Alpine.js</li>
+                <li>C#</li>
+                <li>.NET 9</li>
+                <li>AEM 6</li>
+            </ul>
+            &nbsp;
+            <h1>Certifications</h1>
+            <ul>
+                <li>CompTIA A+</li>
+                <li>CompTIA Data+&emsp;&emsp;&emsp;&ensp;<i>expected May 2025</i></li>
+                <li>CompTIA Network+&emsp;&emsp;<i>expected July 2025</i></li>
+                <li>CompTIA Security+&emsp;&emsp;<i>expected December 2025</i></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="error-message"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Me</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
