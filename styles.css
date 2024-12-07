@@ -6,19 +6,19 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light grey background for the body */
-    color: #333; /* Dark grey text color */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #007BFF; /* Blue background for the header */
-    color: #fff; /* White text color */
+    background: #007BFF;
+    color: #fff;
     padding: 1rem 0;
     position: relative;
 }
@@ -55,12 +55,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White text color for nav links */
+    color: #fff;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover for better accessibility */
+    text-decoration: underline;
 }
 
 main {
@@ -126,28 +126,28 @@ form input, form textarea, form button {
     margin-bottom: 1rem;
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #ccc; /* Light grey border for inputs */
-    border-radius: 4px; /* Rounded corners for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 form input:focus, form textarea:focus {
-    border-color: #007BFF; /* Blue border on focus for inputs */
-    outline: none; /* Remove default outline */
+    border-color: #007BFF;
+    outline: none;
 }
 
 form button {
-    background: #007BFF; /* Blue background for button */
-    color: #fff; /* White text color for button */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners for button */
-    cursor: pointer; /* Pointer cursor on hover */
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     min-width: 100px;
     width: 25%;
     margin-top: 2rem;
 }
 
 form button:hover {
-    background: #0056b3; /* Darker blue on hover for button */
+    background: #0056b3;
 }
 
 p#error-message {
@@ -158,13 +158,12 @@ p#error-message {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333; /* Dark grey background for footer */
-    color: #fff; /* White text color for footer */
+    background: #333;
+    color: #fff;
     width: 100%;
     bottom: 0;
 }
 
-/* Lightbox modal styles */
 .lightbox-modal {
     display: none;
     position: fixed;
@@ -174,7 +173,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 70vw;
     height: 80vh;
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
 }
@@ -241,16 +240,16 @@ footer {
     nav ul li {
         margin: 0;
         text-align: center;
-        border-top: 1px solid #fff; /* White border between list items */
+        border-top: 1px solid #fff;
     }
 
     nav ul li:hover {
-        background: #0056b3; /* Darker blue background on hover */
+        background: #0056b3;
     }
 
     nav ul li a {
         display: block;
-        padding: 1rem; /* Ensure consistent padding */
+        padding: 1rem;
     }
 
     nav ul li a:hover {
@@ -260,5 +259,4 @@ footer {
     form button {
         margin: auto;
     }
-
 }
