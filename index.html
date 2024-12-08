@@ -10,13 +10,14 @@
 <body>
     <header>
         <nav>
-            <button class="hamburger" aria-label="Toggle navigation">
+            <button class="hamburger" type="button" aria-label="Toggle navigation">
                 &#9776;
             </button>
             <ul class="nav-menu">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -88,29 +89,46 @@
                 <li>.NET 9</li>
                 <li>AEM 6</li>
             </ul>
-            &nbsp;
-            <h1>Certifications</h1>
-            <ul>
-                <li>CompTIA A+</li>
-                <li>CompTIA Data+&emsp;&emsp;&emsp;&ensp;<i>expected May 2025</i></li>
-                <li>CompTIA Network+&emsp;&emsp;<i>expected July 2025</i></li>
-                <li>CompTIA Security+&emsp;&emsp;<i>expected December 2025</i></li>
-            </ul>
+        </section>
+        <section id="certifications">
+            <h1>(Future) Certifications</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Certification</th>
+                        <th>Expected Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CompTIA A+</td>
+                        <td>May 2025</td>
+                    </tr>
+                    <tr>
+                        <td>CompTIA Data+</td>
+                        <td>June 2025</td>
+                    </tr>
+                    <tr>
+                        <td>CompTIA Network+</td>
+                        <td>August 2025</td>
+                    </tr>
+                    <tr>
+                        <td>CompTIA Security+</td>
+                        <td>December 2025</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section id="contact">
             <h1>Contact</h1>
             <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-
                 <button type="submit">Submit</button>
-                <p id="error-message"></p>
             </form>
         </section>
     </main>

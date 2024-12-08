@@ -30,6 +30,28 @@ nav {
     padding: 0 1rem;
 }
 
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 .hamburger {
     display: none;
     font-size: 2rem;
@@ -103,7 +125,7 @@ section#about p {
 }
 
 section#contact {
-    margin: 0 auto;
+    margin: 6rem auto 0 auto;
     width: 55%;
     min-width: 300px;
     padding-bottom: 4rem;
@@ -196,6 +218,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+    table {
+        width: 100%;
+    }
+
     .lightbox-modal {
         height: 60vh;
     }
@@ -222,7 +248,7 @@ footer {
         width: 250px;
         background: #007BFF;
         position: fixed;
-        top: 75px; /* Adjust this value to match the height and padding of the header */
+        top: 71px; /* Adjust this value to match the height and padding of the header */
         left: -250px;
         transition: left 0.3s ease-in-out;
         z-index: 1002;
